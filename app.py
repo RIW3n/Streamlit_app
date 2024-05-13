@@ -7,7 +7,8 @@ with st.sidebar:
     st.text("Settings")
     thresh = st.slider("Threshold",min_value=0.40,max_value=0.99,value=0.5)
 with st.expander("About this app"):
-    st.text("YOLO powered Streamlit app")
+    st.text("""YOLO powered Streamlit app
+            For object Detection""")
 
 img_file = st.file_uploader("Bruv upload your image",type=['png','jpg'],help="this should only be images.") 
 

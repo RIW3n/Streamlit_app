@@ -4,7 +4,7 @@ from PIL import Image
 model = YOLO("yolov8n.pt")
 
 with st.sidebar:
-    st.text("The side bar")
+    st.text("Settings")
     thresh = st.slider("Threshold",min_value=0.40,max_value=0.99,value=0.5)
 with st.expander("About this app"):
     st.text("YOLO powered Streamlit app")
